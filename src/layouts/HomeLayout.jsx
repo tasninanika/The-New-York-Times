@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import LatestNews from "../components/LatestNews";
+import Navbar from "../components/Navbar";
 
 const HomeLayout = () => {
   return (
@@ -10,7 +11,12 @@ const HomeLayout = () => {
         <section className="w-11/12 mx-auto">
           <LatestNews></LatestNews>
         </section>
+        <section>
+          <Navbar></Navbar>
+        </section>
       </header>
+      <nav></nav>
+      <main></main>
     </div>
   );
 };
