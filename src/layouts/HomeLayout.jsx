@@ -4,12 +4,14 @@ import LatestNews from "../components/LatestNews";
 
 const HomeLayout = () => {
   return (
-    <header>
-      <Header></Header>
-      <section className="w-11/12 mx-auto">
-        <LatestNews></LatestNews>
-      </section>
-    </header>
+    <div className="my-10 mx-auto">
+      <header>
+        <Header></Header>
+        <section className="w-11/12 mx-auto">
+          <LatestNews></LatestNews>
+        </section>
+      </header>
+    </div>
   );
 };
 
