@@ -11,7 +11,7 @@ const HomeLayout = () => {
         <section className="w-11/12 mx-auto">
           <LatestNews></LatestNews>
         </section>
-        <section>
+        <section className="w-11/12 mx-auto">
           <Navbar></Navbar>
         </section>
       </header>
