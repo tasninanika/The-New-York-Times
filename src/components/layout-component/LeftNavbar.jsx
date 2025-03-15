@@ -11,11 +11,13 @@ const LeftNavbar = () => {
 
   return (
     <div>
-      <h2 className="text-lg font-semibold">All Category{categories.length}</h2>
+      <h2 className="text-lg font-semibold">
+        All Category ({categories.length})
+      </h2>
       <div>
-        {categories.map((category) => {
-          <button></button>;
-        })}
+        {categories.map((category) => (
+          <button key={category.category_id}>{category.category_name}</button>
+        ))}
       </div>
     </div>
   );
