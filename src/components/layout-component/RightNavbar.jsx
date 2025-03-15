@@ -1,9 +1,9 @@
-import React from "react";
+import SocialLogin from "../SocialLogin";
 
 const RightNavbar = () => {
   return (
     <div>
-      <h2>Right</h2>
+      <SocialLogin></SocialLogin>
     </div>
   );
 };
