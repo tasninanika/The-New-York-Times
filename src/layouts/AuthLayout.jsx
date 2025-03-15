@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 const AuthLayout = () => {
   return (
-    <div>
+    <div className="bg-[#F3F3F3]">
       <header className="py-3 w-11/12 mx-auto">
         <Navbar></Navbar>
       </header>
