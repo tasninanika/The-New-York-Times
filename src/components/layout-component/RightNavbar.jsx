@@ -3,7 +3,7 @@ import SocialLogin from "../SocialLogin";
 
 const RightNavbar = () => {
   return (
-    <div>
+    <div className="space-y-10">
       <SocialLogin></SocialLogin>
       <FindUs></FindUs>
     </div>
