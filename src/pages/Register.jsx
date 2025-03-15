@@ -63,7 +63,7 @@ const Register = () => {
           </form>
           <p className="text-xs text-center font-semibold text-[#706F6F]">
             Already Have An Account ?{" "}
-            <Link to="/auth/register" className="text-orange-500">
+            <Link to="/auth/login" className="text-orange-500">
               Login
             </Link>
           </p>
