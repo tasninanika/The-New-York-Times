@@ -7,11 +7,27 @@ const Register = () => {
       <div className="min-h-screen flex justify-center items-center">
         <div className="card bg-base-100 w-full max-w-lg shrink-0 rounded-none p-10">
           <h2 className="text-2xl font-semibold text-center">
-            Login Your Account
+            Register Your Account
           </h2>
           <form>
             <div className="card-body">
               <fieldset className="fieldset gap-2">
+                <label className="fieldset-label text-[#403F3F] text-sm font-semibold">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  className="input bg-[#F3F3F3] w-full border-none mb-4"
+                  placeholder="Enter your name"
+                />
+                <label className="fieldset-label text-[#403F3F] text-sm font-semibold">
+                  Photo URL
+                </label>
+                <input
+                  type="text"
+                  className="input bg-[#F3F3F3] w-full border-none mb-4"
+                  placeholder="Enter your photo url"
+                />
                 <label className="fieldset-label text-[#403F3F] text-sm font-semibold">
                   Email
                 </label>
@@ -28,19 +44,16 @@ const Register = () => {
                   className="input bg-[#F3F3F3] w-full border-none"
                   placeholder="Enter your password"
                 />
-                <div>
-                  <a className="link link-hover">Forgot password?</a>
-                </div>
                 <button className="btn bg-[#403F3F] rounded-none mt-4 text-white">
-                  Login
+                  Register
                 </button>
               </fieldset>
             </div>
           </form>
           <p className="text-xs text-center font-semibold text-[#706F6F]">
-            Dont’t Have An Account ?{" "}
+            Already Have An Account ?{" "}
             <Link to="/auth/register" className="text-orange-500">
-              Register
+              Login
             </Link>
           </p>
         </div>
