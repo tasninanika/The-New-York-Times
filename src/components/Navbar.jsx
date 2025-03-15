@@ -3,18 +3,20 @@ import userIcon from "../assets/user.png";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center">
-      <div></div>
-      <div className="nav space-x-5">
+    <div className="flex justify-between items-center navbar">
+      <div className="navbar-start"></div>
+      <div className="navbar-center space-x-5">
         <Link to="/">Home</Link>
         <Link to="/career">Career</Link>
         <Link to="/about">About</Link>
       </div>
-      <div className="login flex gap-2 items-center">
+      <div className="login navbar-end flex gap-3 items-center">
         <div>
           <img src={userIcon} alt="" />
         </div>
-        <button className="btn btn-neutral rounded-none">Login</button>
+        <button className="btn btn-neutral rounded-none px-10 bg-[#403F3F]">
+          Login
+        </button>
       </div>
     </div>
   );
