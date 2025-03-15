@@ -1,12 +1,18 @@
 import { useLoaderData } from "react-router-dom";
+import NewsCard from "../components/NewsCard";
 
 const CategoryNews = () => {
-  const { data } = useLoaderData();
-  console.log(data);
+  const { data: news } = useLoaderData();
+  console.log(news);
 
   return (
     <div>
-      <h2>{data.length} found in this category</h2>
+      <h2 className="font-semibold mb-3">Home</h2>
+      <div>
+        {news.map((singleNews) => (
+          <NewsCard key={singleNews._id} news={singleNews}></NewsCard>
+        ))}
+      </div>
     </div>
   );
 };
