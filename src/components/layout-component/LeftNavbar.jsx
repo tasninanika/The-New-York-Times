@@ -3,7 +3,7 @@ import React from "react";
 const LeftNavbar = () => {
   return (
     <div>
-      <h2>Left navbar</h2>
+      <h2 className="text-lg font-semibold">All Category</h2>
     </div>
   );
 };
