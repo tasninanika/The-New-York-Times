@@ -1,7 +1,10 @@
 const Login = () => {
   return (
     <div className="min-h-screen flex justify-center items-center">
-      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div className="card bg-base-100 w-full max-w-lg shrink-0 rounded-none p-10">
+        <h2 className="text-2xl font-semibold text-center">
+          Login Your Account
+        </h2>
         <div className="card-body">
           <fieldset className="fieldset">
             <label className="fieldset-label">Email</label>
