@@ -33,6 +33,10 @@ const routes = createBrowserRouter([
     path: "register",
     element: <div>Register</div>,
   },
+  {
+    path: "*",
+    element: <h1>Error</h1>,
+  },
 ]);
 
 export default routes;
