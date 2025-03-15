@@ -5,7 +5,7 @@ const NewsCard = (props = {}) => {
   const { news } = props || {};
 
   return (
-    <div className="p-4 bg-white rounded-lg mx-10 border-gray-100 border-2">
+    <div className="p-4 bg-white rounded-lg mx-10 border-gray-100 border-2 mb-10">
       {/* Author Information */}
       <div className="flex items-center mb-4">
         <img
@@ -33,9 +33,9 @@ const NewsCard = (props = {}) => {
       />
 
       {/* Details */}
-      <p className="text-gray-700 text-sm mb-4">
+      <p className="text-gray-700 text-sm border-b border-gray-200 pb-4 mb-4">
         {news.details.slice(0, 150)}...{" "}
-        <span className="text-primary">Read More</span>
+        <span className="text-orange-500">Read More</span>
       </p>
 
       {/* Ratings and Views */}
@@ -45,7 +45,7 @@ const NewsCard = (props = {}) => {
           {[...Array(5)].map((_, i) => (
             <AiFillStar
               key={i}
-              className={`text-yellow-500 ${
+              className={`text-orange-500 ${
                 i < Math.round(news.rating.number) ? "" : "opacity-50"
               }`}
             />
