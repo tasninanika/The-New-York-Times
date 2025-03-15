@@ -5,7 +5,7 @@ const NewsCard = (props = {}) => {
   const { news } = props || {};
 
   return (
-    <div className=" p-4 bg-white rounded-lg shadow-md">
+    <div className="p-4 bg-white rounded-lg mx-10 border-gray-100 border-2">
       {/* Author Information */}
       <div className="flex items-center mb-4">
         <img
