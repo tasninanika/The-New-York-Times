@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
     <div className="min-h-screen flex justify-center items-center">
@@ -33,6 +35,12 @@ const Login = () => {
             </fieldset>
           </div>
         </form>
+        <p className="text-xs text-center font-semibold text-[#706F6F]">
+          Dont’t Have An Account ?{" "}
+          <Link to="/auth/register" className="text-orange-500">
+            Register
+          </Link>
+        </p>
       </div>
     </div>
   );
