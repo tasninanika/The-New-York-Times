@@ -15,6 +15,8 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  console.log(loading, user);
+
   const createNewUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
@@ -37,6 +39,7 @@ const AuthProvider = ({ children }) => {
     createNewUser,
     logOut,
     logIn,
+    loading,
   };
 
   useEffect(() => {
