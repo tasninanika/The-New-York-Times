@@ -1,9 +1,15 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const form = new FormData(e.target);
+    const name = form.get("name");
+    const photo = form.get("photo");
+    const email = form.get("email");
+    const password = form.get("password");
+    console.log(form);
   };
   return (
     <div>
