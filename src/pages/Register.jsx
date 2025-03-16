@@ -9,7 +9,7 @@ const Register = () => {
           <h2 className="text-2xl font-semibold text-center">
             Register Your Account
           </h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="card-body">
               <fieldset className="fieldset gap-2">
                 <label className="fieldset-label text-[#403F3F] text-sm font-semibold">
@@ -17,6 +17,7 @@ const Register = () => {
                 </label>
                 <input
                   type="text"
+                  name="name"
                   className="input bg-[#F3F3F3] w-full border-none mb-4"
                   placeholder="Enter your name"
                 />
@@ -25,6 +26,7 @@ const Register = () => {
                 </label>
                 <input
                   type="text"
+                  name="photo"
                   className="input bg-[#F3F3F3] w-full border-none mb-4"
                   placeholder="Enter your photo url"
                 />
@@ -33,6 +35,7 @@ const Register = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   className="input bg-[#F3F3F3] w-full border-none mb-4"
                   placeholder="Enter your email address"
                 />
@@ -41,6 +44,7 @@ const Register = () => {
                 </label>
                 <input
                   type="password"
+                  name="password"
                   className="input bg-[#F3F3F3] w-full border-none"
                   placeholder="Enter your password"
                 />
