@@ -1,9 +1,12 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Login = () => {
   const { logIn, setUser } = useContext(AuthContext);
+  const location = useLocation();
+  console.log(location);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
