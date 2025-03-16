@@ -83,7 +83,10 @@ const Register = () => {
                     <span className="text-[#706F6F]">Term & Conditions</span>
                   </label>
                 </div>
-                <button className="btn bg-[#403F3F] rounded-none mt-4 text-white">
+                <button
+                  type="submit"
+                  className="btn bg-[#403F3F] rounded-none mt-4 text-white"
+                >
                   Register
                 </button>
               </fieldset>

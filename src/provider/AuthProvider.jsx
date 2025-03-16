@@ -9,7 +9,7 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const createNewUser = (email, password) => {
-    return createUserWithEmailAndPassword(auth);
+    return createUserWithEmailAndPassword(auth, email, password);
   };
 
   const authInfo = {
