@@ -50,6 +50,11 @@ const Register = () => {
                   className="input bg-[#F3F3F3] w-full border-none mb-4"
                   placeholder="Enter your name"
                 />
+                {error.name && (
+                  <label className="label text-xs text-red-500">
+                    {error.name}
+                  </label>
+                )}
                 <label className="fieldset-label text-[#403F3F] text-sm font-semibold">
                   Photo URL
                 </label>
