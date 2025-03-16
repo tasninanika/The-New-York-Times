@@ -14,6 +14,7 @@ const Login = () => {
                 Email
               </label>
               <input
+                name="email"
                 type="email"
                 className="input bg-[#F3F3F3] w-full border-none mb-4"
                 placeholder="Enter your email address"
@@ -22,6 +23,7 @@ const Login = () => {
                 Password
               </label>
               <input
+                name="password"
                 type="password"
                 className="input bg-[#F3F3F3] w-full border-none"
                 placeholder="Enter your password"
