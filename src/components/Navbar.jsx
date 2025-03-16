@@ -16,7 +16,13 @@ const Navbar = () => {
       </div>
       <div className="login navbar-end flex gap-3 items-center">
         <div>
-          <img src={userIcon} alt="" />
+          {user && user?.email ? (
+            <div>
+              <img src={user?.photoURL} alt="" />
+            </div>
+          ) : (
+            <img src={userIcon} alt="" />
+          )}
         </div>
         {user && user?.email ? (
           <button
