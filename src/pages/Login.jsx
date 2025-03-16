@@ -1,13 +1,20 @@
 import { Link } from "react-router-dom";
 
 const Login = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+  };
   return (
     <div className="min-h-screen flex justify-center items-center">
       <div className="card bg-base-100 w-full max-w-lg shrink-0 rounded-none p-10">
         <h2 className="text-2xl font-semibold text-center">
           Login Your Account
         </h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="card-body">
             <fieldset className="fieldset gap-2">
               <label className="fieldset-label text-[#403F3F] text-sm font-semibold">
@@ -31,7 +38,10 @@ const Login = () => {
               <div>
                 <a className="link link-hover">Forgot password?</a>
               </div>
-              <button className="btn bg-[#403F3F] rounded-none mt-4 text-white">
+              <button
+                type="submit"
+                className="btn bg-[#403F3F] rounded-none mt-4 text-white"
+              >
                 Login
               </button>
             </fieldset>
