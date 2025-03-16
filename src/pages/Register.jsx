@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div>
       <div className="min-h-screen flex justify-center items-center">
