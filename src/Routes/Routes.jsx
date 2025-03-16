@@ -25,8 +25,8 @@ const routes = createBrowserRouter([
     ],
   },
   {
-    path: "news",
-    element: <div>News</div>,
+    path: "/news/:id",
+    element: <h1>News layout</h1>,
   },
   {
     path: "auth",
