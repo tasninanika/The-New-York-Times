@@ -21,7 +21,7 @@ const Navbar = () => {
               <img
                 src={user?.photoURL || userIcon}
                 alt="User Profile"
-                className="w-16 h-16 rounded-full object-cover"
+                className="w-12 h-12 rounded-full object-cover"
               />
             </div>
           ) : (
