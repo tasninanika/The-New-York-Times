@@ -8,7 +8,9 @@ const NewsDetails = () => {
         <Header></Header>
       </header>
       <main className="w-11/12 mx-auto grid grid-cols-12 gap-5">
-        <section className="col-span-9"></section>
+        <section className="col-span-9">
+          <h2 className="font-semibold mb-3">The New York Times</h2>
+        </section>
         <aside className="col-span-3">
           <RightNavbar></RightNavbar>
         </aside>
