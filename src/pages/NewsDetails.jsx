@@ -1,7 +1,10 @@
+import { useLoaderData } from "react-router-dom";
 import Header from "../components/Header";
 import RightNavbar from "../components/layout-component/RightNavbar";
 
 const NewsDetails = () => {
+  const data = useLoaderData();
+  console.log(data);
   return (
     <div>
       <header>
