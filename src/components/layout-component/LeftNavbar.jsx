@@ -33,7 +33,6 @@ const LeftNavbar = () => {
         ))}
       </div>
       <div>
-        <LeftSports></LeftSports>
         {sports.map((sport) => (
           <LeftSports key={sport._id} sport={sport}></LeftSports>
         ))}
