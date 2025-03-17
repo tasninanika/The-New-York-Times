@@ -4,11 +4,18 @@ import LeftSports from "../LeftSports";
 
 const LeftNavbar = () => {
   const [categories, setCategories] = useState([]);
+  const [sports, setSports] = useState([]);
 
   useEffect(() => {
     fetch("https://openapi.programming-hero.com/api/news/categories")
       .then((res) => res.json())
       .then((data) => setCategories(data.data.news_category));
+  }, []);
+
+  useEffect(() => {
+    fetch("https://openapi.programming-hero.com/api/news/category/04")
+      .then((res) => res.json())
+      .then((data) => setSports(data.data));
   }, []);
 
   return (
@@ -27,6 +34,9 @@ const LeftNavbar = () => {
       </div>
       <div>
         <LeftSports></LeftSports>
+        {sports.map((sport) => (
+          <LeftSports key={sport._id} sport={sport}></LeftSports>
+        ))}
       </div>
     </div>
   );
