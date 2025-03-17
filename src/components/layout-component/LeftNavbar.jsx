@@ -18,7 +18,7 @@ const LeftNavbar = () => {
           <NavLink
             to={`/category/${category.category_id}`}
             key={category.category_id}
-            className="btn border-none bg-white shadow-none py-6 text-[#9F9F9F]"
+            className="btn border-none bg-white shadow-none py-6 text-[#9F9F9F] flex items-center justify-start pl-10"
           >
             {category.category_name}
           </NavLink>

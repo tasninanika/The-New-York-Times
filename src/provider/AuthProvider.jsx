@@ -30,7 +30,7 @@ const AuthProvider = ({ children }) => {
     setLoading(true);
     signOut(auth)
       .then(() => {})
-      .catch((error) => {});
+      .catch(() => {});
   };
 
   const updateUserProfile = (updatedData) => {
