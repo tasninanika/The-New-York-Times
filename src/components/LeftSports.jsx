@@ -1,3 +1,4 @@
+import moment from "moment";
 import { SlCalender } from "react-icons/sl";
 
 const LeftSports = ({ sport }) => {
@@ -20,7 +21,7 @@ const LeftSports = ({ sport }) => {
               <p>
                 <SlCalender />
               </p>
-              <p>Jan 4, 2025</p>
+              <p>{moment().format(" MMMM D, YYYY")}</p>
             </div>
           </div>
         </div>
