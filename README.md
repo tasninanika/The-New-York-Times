@@ -1,3 +1,4 @@
+
 # The New York Times - React News Application
 
 This is a dynamic, real-time news application inspired by **The New York Times**, built with modern web technologies. The app allows users to view and read the latest news, breaking stories, and access individual news details fetched from an API. Users need to **log in securely** to view specific news details. The app supports **Email/Password**, **Google**, and **GitHub** login methods via **Firebase Authentication**. The news section displays the most current headlines, updated dynamically with **Moment.js**.
@@ -15,6 +16,8 @@ You can check out the live application here:
 - **Dynamic Date & Time:** Moment.js is used to display real-time dates and times for news articles.
 - **Responsive Design:** Fully responsive UI using **TailwindCSS** to ensure compatibility across devices.
 - **Individual News Details:** Click on any news headline to view detailed information about the news article, but login is required for full access.
+- **React Router:** Handles seamless navigation between different pages within the app.
+- **React Icons:** Enhances UI with visually appealing and customizable icons.
 
 ## Technologies Used
 
@@ -25,6 +28,8 @@ You can check out the live application here:
 - **Context API** - Used for global state management, especially for user authentication.
 - **Firebase** - Used for user authentication, supporting **Email/Password**, **Google**, and **GitHub** login methods.
 - **Moment.js** - Library used for displaying dynamic real-time dates and times for news articles.
+- **React Router** - For routing between pages (Home, Category, News Details, etc.).
+- **React Icons** - Provides customizable icons throughout the app.
 
 ## Installation
 
@@ -69,6 +74,4 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser to view the
 - **News Feed:** The app fetches news articles from an external API and displays them in a card-style layout.
 - **Marquee & Breaking News:** The marquee displays breaking news headlines that change dynamically.
 - **Individual News Page:** Users must log in to view detailed news articles. Clicking on a news headline redirects users to the detailed page, but login is required to see the full content.
-
-
 
