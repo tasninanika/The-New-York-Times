@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import {
   createUserWithEmailAndPassword,
   getAuth,
+  GithubAuthProvider,
   GoogleAuthProvider,
   onAuthStateChanged,
   signInWithEmailAndPassword,
@@ -31,6 +32,8 @@ const AuthProvider = ({ children }) => {
 
   const signInWithGithub = () => {
     setLoading(true);
+    const provider = new GithubAuthProvider();
+    return signInWithPopup(auth, provider);
   };
 
   const logIn = (email, password) => {
