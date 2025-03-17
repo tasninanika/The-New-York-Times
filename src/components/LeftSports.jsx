@@ -2,7 +2,7 @@ import moment from "moment";
 import { SlCalender } from "react-icons/sl";
 
 const LeftSports = ({ sport }) => {
-  const { title, image_url } = sport;
+  const { author, title, image_url } = sport;
   return (
     <div>
       <div className="card my-10">
@@ -21,7 +21,7 @@ const LeftSports = ({ sport }) => {
               <p>
                 <SlCalender />
               </p>
-              <p>{moment().format(" MMMM D, YYYY")}</p>
+              <p>{moment(author.published_date).format(" MMMM D, YYYY")}</p>
             </div>
           </div>
         </div>
