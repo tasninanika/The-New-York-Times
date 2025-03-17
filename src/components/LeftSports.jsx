@@ -1,20 +1,27 @@
+import { SlCalender } from "react-icons/sl";
+
 const LeftSports = ({ sport }) => {
-  const { author, title, image_url } = sport;
+  const { title, image_url } = sport;
   return (
     <div>
-      <div className="card bg-base-100 shadow-sm">
+      <div className="card my-10">
         <figure>
           <img
             src={image_url}
             alt="Shoes"
-            className="w-[267px] h-[150px] mb-3"
+            className="w-[267px] h-[150px] mb-3 rounded-sm"
           />
         </figure>
         <div className="">
           <h2 className="card-title">{title}</h2>
-          <div className="card-actions flex justify-between">
-            <div className="badge badge-outline">Sports</div>
-            <div className="text-sm text-[#9F9F9F]">Jan 4, 2025</div>
+          <div className="card-actions flex justify-between mt-4">
+            <div className="text-[#403F3F] font-semibold text-xs">Sports</div>
+            <div className="text-xs font-semibold text-[#9F9F9F] flex items-center gap-2">
+              <p>
+                <SlCalender />
+              </p>
+              <p>Jan 4, 2025</p>
+            </div>
           </div>
         </div>
       </div>
