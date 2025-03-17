@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import LeftSports from "../LeftSports";
 
 const LeftNavbar = () => {
   const [categories, setCategories] = useState([]);
@@ -24,7 +25,9 @@ const LeftNavbar = () => {
           </NavLink>
         ))}
       </div>
-      <div></div>
+      <div>
+        <LeftSports></LeftSports>
+      </div>
     </div>
   );
 };
