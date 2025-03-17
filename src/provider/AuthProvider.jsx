@@ -61,6 +61,7 @@ const AuthProvider = ({ children }) => {
     loading,
     updateUserProfile,
     signInWithGoogle,
+    signInWithGithub,
   };
 
   useEffect(() => {
