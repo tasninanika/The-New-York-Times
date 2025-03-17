@@ -71,8 +71,4 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser to view the
 - **Individual News Page:** Users must log in to view detailed news articles. Clicking on a news headline redirects users to the detailed page, but login is required to see the full content.
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 
